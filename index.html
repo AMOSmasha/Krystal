@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Les souvenirs de Krystal">
+  <title>Krystal — Souvenirs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow">NOTRE ALBUM</p>
+      <h1>Krystal</h1>
+      <p class="subtitle">Une vie entière de souvenirs.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Ses souvenirs</h2>
+      <p>
+        Photos et vidéos de Krystal, réunies ici pour celles et ceux qui l’ont aimée.
+      </p>
+    </section>
+
+    <section class="filters-section" aria-label="Filtres de la galerie">
+      <div id="filters" class="filters"></div>
+      <p id="result-count" class="result-count"></p>
+    </section>
+
+    <section id="gallery" class="gallery" aria-live="polite"></section>
+
+    <p id="empty-state" class="empty-state" hidden>
+      Aucun souvenir ne correspond à ce filtre.
+    </p>
+  </main>
+
+  <div id="lightbox" class="lightbox" hidden>
+    <button id="close-lightbox" class="lightbox-close" aria-label="Fermer">×</button>
+    <button id="previous-media" class="lightbox-nav previous" aria-label="Précédent">‹</button>
+    <div id="lightbox-content" class="lightbox-content"></div>
+    <button id="next-media" class="lightbox-nav next" aria-label="Suivant">›</button>
+  </div>
+
+  <footer>
+    <p>Pour Krystal, avec amour.</p>
+  </footer>
+
+  <script src="media.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
