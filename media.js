@@ -2953,4 +2953,6 @@ const mediaItems = [
   }
 ];
 
-const tagLabels = {\n  all:"Tous"\n};
+const tagLabels = {
+  all: "Tous"
+};
